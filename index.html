@@ -35,12 +35,15 @@
 waffles are my jam - particularly with apple jam.<br>
 you can probably find me in the peanut butter aisle at trader joe's.</p>
 
+	<div id="project"><p>here's a project that i'm working on:</p>
+	<img src="pair_generator.jpg"/ id="pairGenerator"></div>
+
 
 <form
 	action="http://formspree.io/bommy.cha@gmail.com"
 	method="POST">
 	<label><input name="username" type="text" value="name"></label><br><br>
-	<label><span id="breakfast">What's your favorite breakfast?</span><br>
+	<label><span id="breakfast">what's your favorite breakfast?</span></label><br>
 		<input name="breakfast" type="radio" value="waffles">waffles<br>
 		<input name="breakfast" type="radio" value="yogurt">granola & yogurt<br>
 		<input name="breakfast" type="radio" value="eggs">eggs<br>
@@ -49,6 +52,23 @@ you can probably find me in the peanut butter aisle at trader joe's.</p>
 	<textarea name="description" type="description">or else?</textarea>
 	<label><input type="submit" value="submit"></label>
 </form>
+
+<form class="contact"
+	action="http://formspree.io/bommy.cha@gmail.com"
+	method="POST">
+	<label><span id="contactHead">contact me</span></label><br><br>
+	<label><input name="username" type="text" value="name"></label><br>
+	<label><input name="email" type="text" value="email address"></label><br>
+	<label><input type="submit" id="my-button" value="submit"></label>
+	<script>
+      var button = document.getElementById('my-button');
+      function contactMe(){
+        var contact = alert('thanks for contacting me!');
+      }
+      button.addEventListener('click', contactMe); 
+    </script>
+</form>
+
 
 </div>
 
