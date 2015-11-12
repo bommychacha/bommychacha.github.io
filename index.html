@@ -13,7 +13,14 @@
 <body>
 
 <div id="header">
-<h1>hi, i'm bommy</h1>
+<h1 id="headerColor">hi, i'm bommy</h1>
+<script>
+	var headerColor = document.getElementById("headerColor");
+	function headerColorChange (){
+		headerColor.style.color="green";
+	}
+	headerColor.addEventListener("mouseover", headerColorChange)
+</script>
 <img src="http://www.clker.com/cliparts/F/z/u/7/c/s/waffle-hi.png"/>
 </div>
 
@@ -29,7 +36,15 @@
 </div>
 
 <div id="main">
-<img src = "https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/p720x720/10155037_10206336014333138_8673414560426806334_n.jpg?oh=4b13a070e31a28203f7237d2a59b990f&oe=56BD524B"/>
+<img src = "https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/p720x720/10155037_10206336014333138_8673414560426806334_n.jpg?oh=4b13a070e31a28203f7237d2a59b990f&oe=56BD524B" id="profilepic"/>
+<script>
+	var pictureSize = document.getElementById("profilepic");
+	function increasePictureSize() {
+		profilepic.style.height="500px";
+		profilepic.style.width="500px";
+	}
+	pictureSize.addEventListener("dblclick", increasePictureSize);
+</script>
 
 <p>i work at <a href="https://www.indiegogo.com/" target="_blank">indiegogo</a> and i like to bake, doodle, and build cool digital stuff.<br>
 waffles are my jam - particularly with apple jam.<br>
