@@ -63,11 +63,15 @@ button {
 	font-size: 10px;
 }
 #project {
-	padding-bottom:70px;
+	padding-bottom:20px;
 }
 #project img {
 	width:500px;
 	border-radius: 0;
+}
+#pictureChange {
+	
+	margin-bottom: 70px;
 }
 
 form {

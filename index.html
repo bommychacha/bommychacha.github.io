@@ -57,16 +57,26 @@ you can probably find me in the peanut butter aisle at trader joe's.</p>
 <button id="randomFact">random fact about me</button>
 <p id="randomFactSpot"></p>
 <script>
+var randomFacts = ["i am an aquarius.", "i am 25 years old.", "i like waffles."];
 document.getElementById("randomFact").onclick = showRandomFact;
 function showRandomFact () {
-		document.getElementById("randomFactSpot").innerHTML = "i am an aquarius.";
+		document.getElementById("randomFactSpot").innerHTML = randomFacts[Math.floor(Math.random() * randomFacts.length)];
 }
 </script>
 
-	<div id="project"><p>here's a project that i'm working on:</p>
+	<div id="project"><p>here are projects that i'm working on:</p>
 	<img src="pair_generator.jpg"/ id="pairGenerator"></div>
 
+<button id="pictureChange" onclick="toggle()">another</button>
+<script>
+document.getElementById("pictureChange").onclick = pictureChange;
+function pictureChange () {
+	document.getElementById("pairGenerator").src="toast-logo.png";
+}
+</script>
 
+
+<div>
 <form
 	action="http://formspree.io/bommy.cha@gmail.com"
 	method="POST">
@@ -98,6 +108,7 @@ function showRandomFact () {
 </form>
 
 
+</div>
 </div>
 
 
